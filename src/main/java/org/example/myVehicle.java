@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class  myVehicle{
     private int year;
     private String brand;
@@ -14,10 +16,20 @@ public class  myVehicle{
         this.price = price;
 
     }
+
+    public myVehicle(int year, String subaru, String legacy, int kilometers, int price) {
+    }
+
+
+    public String setBrand(String brand){
+        return brand;
+    }
+    public int setPrice(int price){
+        return price;
+    }
     public boolean worthBuying(int maxPrice){
         return (price < maxPrice);
     }
-
     public int getPrice() {
         return price;
     }
